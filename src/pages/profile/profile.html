@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="GotoNotification()" >
+          <ion-icon name="notifications" ></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="backcolor">
+  <!-- <h3>Profile</h3> -->
+<ion-content class="">
+
+  <ion-card>
+    <div class="imgprof">
+    <img src="assets/imgs/deb.jpg"/>
+  </div>
+    <ion-card-content>
+      <ion-card-title>
+        Rey Marc Dave Pilapil
+      </ion-card-title>
+      <p>
+        debdebdebdeb
+
+      </p>
+    </ion-card-content>
+
+    <ion-item>
+      <ion-icon name='md-star-half' item-start style="color: #d03e84"></ion-icon>
+      Albums
+      <ion-badge item-end>9</ion-badge>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name='md-build' item-start style="color: #55acee"></ion-icon>
+      Followers
+      <ion-badge item-end>260k</ion-badge>
+    </ion-item>
+  </ion-card>
+  <button class="btnreq" color="primary" ion-button  icon-end >
+    <br><span>Send Request</span>
+    <ion-icon class="icon" name="md-paper-plane" ></ion-icon>
+    </button>
+
+</ion-content>

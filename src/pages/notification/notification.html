@@ -1,0 +1,49 @@
+
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Service Buddy</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only >
+          <ion-icon name="notifications"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="backcolor">
+  <h3>Notifications</h3>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+  <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/logo.png">
+        </ion-thumbnail>
+        <h2>Notification 1</h2>
+        <ion-icon name="star"><span class="rating">3.0</span></ion-icon>
+        
+        <button ion-button clear item-end>View</button>
+      </ion-item>
+      <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../../assets/imgs/logo.png">
+          </ion-thumbnail>
+          <h2>Notification 2</h2>
+          <ion-icon name="star"><span class="rating">3.0</span></ion-icon>
+          <button ion-button clear item-end>View</button>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../../assets/imgs/logo.png">
+            </ion-thumbnail>
+            <h2>Notification 3</h2>
+            <ion-icon name="star"><span class="rating">3.0</span></ion-icon>
+            <button ion-button clear item-end>View</button>
+          </ion-item>
+    </ion-list>
+      
+  </ion-content>
+
+

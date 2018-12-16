@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar color="secondary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>ServiceBuddy</ion-title>
+      <ion-buttons end>
+          <button ion-button icon-only (click)="openModal()">
+            <ion-icon name="notifications"></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding class="backcolor">
+    <h3>List of {{ name }}</h3>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+    <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../../assets/imgs/deb.jpg">
+          </ion-thumbnail>
+          <h2>Rey Marc Dave</h2>
+          <ion-icon name="star"><span class="rating">3.0</span></ion-icon>
+          
+          <button ion-button clear item-end (click)="GotoProfile()">View</button>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../../assets/imgs/logo.png">
+            </ion-thumbnail>
+            <h2>Ransenn Stene</h2>
+            <ion-icon name="star"><span class="rating">3.0</span></ion-icon>
+            <button ion-button clear item-end>View</button>
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../../assets/imgs/logo.png">
+              </ion-thumbnail>
+              <h2>Kerwin</h2>
+              <ion-icon name="star"><span class="rating">3.0</span></ion-icon>
+              <button ion-button clear item-end>View</button>
+            </ion-item>
+      </ion-list>
+
+</ion-content>

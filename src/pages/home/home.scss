@@ -1,0 +1,73 @@
+page-home {
+
+}
+// deb{
+//     padding:100px
+//     vertical-align: middle;
+// }
+
+.red {
+	background-color: rgba(220, 83, 81, 1);
+}
+
+.green {
+	background-color: rgba(187, 225, 123, 1);
+}
+
+.blue {
+	background-color: rgba(131, 150, 225, 1);
+}
+
+.purple {
+	background-color: rgba(155, 121, 170, 1);
+}
+
+.yellow {
+    background-color: rgba(235, 229, 39, 1);
+}
+
+.violet {
+    background-color: rgba(213, 118, 211, 1);
+}
+
+.orange {
+	background-color: rgba(213, 151, 46, 1);
+}
+
+.turquoise {
+	background-color: rgba(105, 203, 217, 1);
+}
+
+.box {
+    border-radius: 0px;
+    padding: 0;
+    margin-left: 1px;
+    margin-right: 1px;
+    // Add a flex rule for browsers not supporting the
+    // CSS Grid Layout spec
+    flex: 1 1 300px;
+ 
+    h2 {
+       font-weight: bold;
+   }
+ }
+
+ div button .icon {
+    display: inline-block;
+    font-size: 35px;
+    color: #FFDF00;
+    vertical-align: middle;
+   }
+   
+   .text{
+     display: block;
+     vertical-align: middle;
+   }
+
+   .btn{
+    height: 100px;
+   }
+
+   .backcolor{
+    background-color: #ececec
+   }

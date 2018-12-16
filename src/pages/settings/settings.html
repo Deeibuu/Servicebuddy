@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>ServiceBuddy</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="GotoNotification()" >
+          <ion-icon name="notifications" ></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <h3>Settings</h3>
+  <ion-item-group>
+  <ion-item>
+    <ion-label>Item Status</ion-label>
+   <ion-toggle [(ngModel)]="storageStatus"></ion-toggle>
+  </ion-item>
+  <p>wa pako kabaw unsay ibutang</p>
+
+  </ion-item-group>
+  <button ion-button block color="light" (click)="updateItem()">Save Changes</button>
+
+</ion-content>
